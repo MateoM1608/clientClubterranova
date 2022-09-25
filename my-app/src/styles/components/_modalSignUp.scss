@@ -1,0 +1,29 @@
+.modalSignUp_container{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+}
+
+.modalSignUp_divGlob{
+    background-color: white;
+    width: 35%;
+    height: 50%;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.error{
+    font-family: $fuente;
+    font-weight: 100;
+    font-size: 12px;
+    color: red;
+}

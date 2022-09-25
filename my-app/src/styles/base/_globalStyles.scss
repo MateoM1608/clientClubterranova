@@ -1,0 +1,115 @@
+.Title_global{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: white;
+    height: 60px;
+    box-shadow: 0px 0px 10px rgb(54, 54, 54);
+    
+    h1{
+        font-family: $fuente;
+        font-weight: 200;
+        color: $letraText;
+        padding-left: 20px;
+    }
+
+}
+
+.Subtitle_global{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin: 20px;
+    height: 35px;
+    border-radius: 3px;
+    background: $principal;
+    
+    h3{
+        color: $letraPrincipal;
+        font-family: $fuente;
+        font-weight: 200;
+        font-size: 14px;
+    }
+}
+
+.div_Global{
+    margin: 25px;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    background-color:white;
+    border-radius: 10px;
+}
+
+.div_input_form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3% 20% 3% 20%;
+    height: 40px;
+
+    label{
+        font-size: 18px;
+        font-family: $fuente;
+        font-weight: 600;
+        color: $letraText;
+    }
+
+    input{
+        height: 80%;
+        width: 69%;
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 3px;
+    }
+
+    input::placeholder{
+        font-family: $fuente;
+        font-size: 14px;
+        padding-left: 5px;
+        color: $letraText;
+        text-align: center;
+    }
+
+    input:focus{
+        outline: solid 1.5px $principal;
+    }
+}
+
+.btn_form{
+    background-color: $btn_color;
+    color: $letraPrincipal;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: $fuente;
+    font-size: 14px;
+    margin: 15px 5px 0px 5px;
+    cursor: pointer;
+}
+
+
+.btn_form:hover{
+    background-color: $btn_color_hover;
+}
+
+.btn_disabled{
+    background-color: $btn_disabled;
+    color: $letraPrincipal;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: $fuente;
+    font-size: 14px;
+    margin: 15px 5px 0px 5px;
+    cursor: default;
+}
+
+.select-react{
+    width: 70%;
+}
+
+.div_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

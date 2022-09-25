@@ -1,0 +1,29 @@
+
+
+// UI settings 
+
+@import './base/settings';
+@import './base/globalStyles';
+
+
+// Components
+
+@import './components/menu';
+@import './components/sidebar';
+@import './components/cardInventario';
+@import './components/modalModificarProd';
+@import './components/cardInforme';
+@import './components/modalLogout';
+@import './components/cardUser';
+@import './components/modalSignUp';
+
+
+// vistas
+
+@import './views/inicio';
+@import './views/login';
+@import './views/ventas';
+@import './views/inventario';
+@import './views/informe';
+@import './views/producto';
+@import './views/page404';

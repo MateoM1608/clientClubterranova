@@ -1,0 +1,35 @@
+.div_block{
+    display: none;
+}
+
+.div_Global_block{
+    margin: 25px;
+    padding-top: 1px;
+    padding-bottom: 9px;
+    background-color:white;
+    border-radius: 10px;
+}
+
+.Subtitle_product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px;
+    height: 35px;
+    border-radius: 3px;
+    background: $principal;
+    cursor: pointer;
+    
+    h3{
+        color: $letraPrincipal;
+        font-family: $fuente;
+        font-weight: 200;
+        font-size: 14px;
+    }
+}
+
+.Subtitle_product:hover{
+    background-color: $btn_disabled;
+}

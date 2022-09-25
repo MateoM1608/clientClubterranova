@@ -1,0 +1,55 @@
+.informe_titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    height: 40px;
+}
+
+.informe_totales{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    height: 40px;
+    padding-right: 70px;
+    border-bottom: 1px solid grey;
+    border-top: 2px solid rgb(180, 180, 180);
+
+    h4{
+        font-family: $fuente;
+        font-weight: 200;
+        font-size: 18px;
+    }
+}
+
+.informe_pieText{
+    margin: 5px;
+    color: $principal
+}
+
+.informe_pieText1{
+    margin: 5px 5px 5px 35px;
+    color: $principal
+}
+
+.invent_fecha{
+    width: 18%;
+}
+
+.invent_producto{
+    width: 28%;
+}
+
+.invent_precioUn{
+    width: 20%;
+}
+
+.invent_cantidad{
+    width: 8%;
+}
+
+.invent_precioTot{
+    width: 20%;
+}

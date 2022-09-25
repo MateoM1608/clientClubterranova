@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+}
+.sidebar_container{
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 30px;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: $principal;
+
+    div{
+        display: flex;
+        flex-direction: row;
+
+        h3{
+            margin-right: 50px;
+            font-family: $fuente;
+            font-size: 16px;
+            font-weight: 200;
+            color: $letraPrincipal 
+        }
+    }
+
+    h4{
+        margin-right: 50px;
+        font-family: $fuente;
+        font-size: 16px;
+        font-weight: 200;
+        color: $letraPrincipal 
+    }
+
+    img{
+        // top: 0px;
+        // left: 60px;
+        // width: 80px;
+        // position: fixed;
+
+        width: 40px;
+    }
+}
+
+.sidebar_user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h3{
+        margin-left: 5px;
+    }
+}
+
+.sidebar_logOut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    margin-top: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sidebar_logOut:hover{
+    background-color: $btn_disabled;
+}
+
+
+.titleClub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        margin-left: 20px;
+        font-family: $fuente;
+        font-size: 18px;
+        font-weight: 400;
+        color: $letraPrincipal
+    }
+}

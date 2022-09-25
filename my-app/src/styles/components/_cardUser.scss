@@ -1,0 +1,37 @@
+
+.tabla_users{
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.cardUser_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.user_card{
+    width: 60%;
+}
+
+.deleteUser{
+    cursor: pointer;
+}
+
+.row_user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid 2px rgb(180, 180, 180);
+
+    h2{
+        color: $letraText;
+        font-family: $fuente;
+        font-weight: 600;
+        font-size: 18px;
+        width: 60%;
+    }
+}

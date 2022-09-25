@@ -1,0 +1,46 @@
+.menu_container{
+    top: 50px;
+    position: fixed;
+    z-index: 100;
+    border: 1px solid grey;
+    background-color: $secundario;
+}
+
+.menu_lateral{
+    width: 200px;
+    height: 100vh;
+}
+
+.menu_icon{
+
+    height: 20px;
+    padding:10px;
+    cursor: pointer;
+}
+
+.menu_opciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    margin: 8px 0px 8px 0px;
+
+    cursor: pointer;
+
+    h2{
+        font-family: $fuente;
+        color: $letraSecundaria;
+        font-size: 16px;
+        font-weight: 200;
+        padding-left: 15px;
+    }
+}
+
+.menu_opciones:hover{
+    background-color: $terciario;
+
+    h2{
+        color: $letraPrincipal;
+        font-weight: 600;
+    }
+}

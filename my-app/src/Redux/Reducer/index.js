@@ -111,7 +111,7 @@ function rootReducer(state = initialState, action){
                 Swal.fire({
                     position: 'top-end',
                     icon: 'error',
-                    title: 'No se enconraron datos',
+                    title: 'No se encontraron datos',
                     showConfirmButton: false,
                     timer: 1000
                   })

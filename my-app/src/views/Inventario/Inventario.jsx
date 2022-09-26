@@ -6,7 +6,6 @@ import { getAllProductoSelect,
         getAllCategorySelect, 
         getProduct, 
         getProductoByCategory,
-        getProduct,
         clearProduct
     } from "../../Redux/actions";
 import ModalModificarProd from "../../components/ModalModificarProd/ModalModificarProd";

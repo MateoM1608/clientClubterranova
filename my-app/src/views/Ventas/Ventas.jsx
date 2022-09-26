@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getAllProductoSelect, getAllProducto, postVentas } from "../../Redux/actions";
 import Swal from "sweetalert2";
 import Select from 'react-select'
+import reload from '../../Middlewares/Reload'
 
  
 const Ventas = () => {
@@ -22,31 +23,33 @@ const Ventas = () => {
         e.preventDefault()
         if(venta.idProducto && venta.cantidadAVender){
             const findProducto = allProducts.find(e => e.id == venta.idProducto)
-            if(findProducto.cantidad > venta.cantidadAVender){
+            if(findProducto.cantidad >= venta.cantidadAVender){
                 dispatch(postVentas({
                     cantidadAVender: venta.cantidadAVender,
                     usuario: userInfo.user.username
                 },venta.idProducto))
+                setVenta({
+                    ...venta,
+                    idProducto: "",
+                    cantidadAVender: ""
+                  })
                 Swal.fire({
                     position: 'top-end',
                     icon: 'success',
                     title: 'Venta realizada correctamente',
                     showConfirmButton: false,
-                    timer: 1500
+                    timer: 800
+                  }).then(res => {
+                    dispatch(getAllProductoSelect())
+                    reload()
                   })
-                dispatch(getAllProductoSelect())
-                setVenta({
-                    ...venta,
-                    idProducto: "",
-                    cantidadAVender: ""
-                })
             }else{
                 Swal.fire({
                     icon: 'error',
                     title: 'Error...',
                     text: 'No tiene la cantidad que desea vender',
                     footer: ''
-                  })
+                })
             }
         }else{
             Swal.fire({

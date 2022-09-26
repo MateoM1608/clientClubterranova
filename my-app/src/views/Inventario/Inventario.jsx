@@ -6,7 +6,7 @@ import { getAllProductoSelect,
         getAllCategorySelect, 
         getProduct, 
         getProductoByCategory,
-        getAllProducto,
+        getProduct,
         clearProduct
     } from "../../Redux/actions";
 import ModalModificarProd from "../../components/ModalModificarProd/ModalModificarProd";
@@ -69,7 +69,7 @@ const Inventario = () => {
     }
 
     const onSubmit = () => {
-        dispatch(getAllProducto())
+        dispatch(getProduct())
     }
 
     const toggleModalModificar = () => {

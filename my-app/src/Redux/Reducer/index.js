@@ -68,21 +68,11 @@ function rootReducer(state = initialState, action){
                 categoriaSelect: categorias
             }
         case "GET_ALL_PRODUCT":
-            if(action.payload.length === 0){
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error...',
-                    text: 'No se encontraron datos',
-                    footer: ''
-                })
-            }
             return{
                 ...state,
                 allProducts: action.payload,
-                products: action.payload
-                
             }
-            case "GET_PRODUCT_BY_CATEGORY":
+        case "GET_PRODUCT_BY_CATEGORY":
                 const productByCategory = []
                 if(action.payload.length === 0){
                     Swal.fire({

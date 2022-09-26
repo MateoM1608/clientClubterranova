@@ -1,3 +1,3 @@
 window.env = {
-  "API_URL": "http://localhost:3001"
+  "API_URL": "https://clubterranovaproductivo.herokuapp.com"
 };

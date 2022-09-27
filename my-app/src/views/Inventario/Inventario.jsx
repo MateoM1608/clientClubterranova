@@ -5,6 +5,7 @@ import Select from 'react-select'
 import { getAllProductoSelect, 
         getAllCategorySelect, 
         getProduct, 
+        getProductos,
         getProductoByCategory,
         clearProduct
     } from "../../Redux/actions";
@@ -68,7 +69,7 @@ const Inventario = () => {
     }
 
     const onSubmit = () => {
-        dispatch(getProduct())
+        dispatch(getProductos())
     }
 
     const toggleModalModificar = () => {

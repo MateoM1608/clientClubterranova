@@ -24,12 +24,14 @@ const Usuarios = () => {
         dispatch(getUsers())
     },[])
 
-    if(userInfo.user.id != 1){ 
-        return(
-            <div className="page404_container">
-                <h1>No tiene permitido ingresar a esta pagina</h1>
-            </div>
-        )
+    if(userInfo){
+        if(userInfo.user.id != 1){ 
+            return(
+                <div className="page404_container">
+                    <h1>No tiene permitido ingresar a esta pagina</h1>
+                </div>
+            )
+        }
     }
 
 

@@ -142,10 +142,7 @@ const Productos = () => {
                   )
                   dispatch(deleteProduct(idProdDelete))
                 }
-            })
-            // .then( res =>{
-            //     reload()
-            //   })
+            }).then(() =>{ getAllProductoSelect()})
         }else{
             Swal.fire({
                 icon: 'error',
@@ -169,9 +166,7 @@ const Productos = () => {
                 title: 'Categoria creada correctamente',
                 showConfirmButton: false,
                 timer: 1500
-              }).then( res =>{
-                reload()
-              })
+              }).then(() =>{ reload()})
         }else{
                 Swal.fire({
                     icon: 'error',
@@ -202,10 +197,7 @@ const Productos = () => {
                   )
                   dispatch(deleteCategory(idCategoriaDelete))
                 }
-            })
-            // .then( res =>{
-            //     reload()
-            //   })
+            }).then(() => getAllCategorySelect())
         }else{
             Swal.fire({
                 icon: 'error',
@@ -256,13 +248,17 @@ const Productos = () => {
         dispatch(getAllCategorySelect())
     },[])
 
-    if(userInfo.user.id != 1){ 
-        return(
-            <div className="page404_container">
-                <h1>No tiene permitido ingresar a esta pagina</h1>
-            </div>
-        )
+    if(userInfo){
+        if(userInfo.user.id != 1){ 
+            return(
+                <div className="page404_container">
+                    <h1>No tiene permitido ingresar a esta pagina</h1>
+                </div>
+            )
+        }
     }
+
+  
 
     return(
         <div>

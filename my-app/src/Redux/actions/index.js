@@ -52,6 +52,11 @@ export const getProduct = (id) => dispatch => {
     .then(res => dispatch({type:"GET_PRODUCT", payload: res.data}))
 }
 
+export const getProductos = () => dispatch => {
+    axios.get(`${env.API_URL}/productos`)
+    .then(res => dispatch({type:"GET_PRODUCT", payload: res.data}))
+}
+
 export const getProductoByCategory = (id) => dispatch => {
     axios.get(`${env.API_URL}/productos`)
     .then(res => dispatch({type:"GET_PRODUCT_BY_CATEGORY", payload: res.data, category: id}))

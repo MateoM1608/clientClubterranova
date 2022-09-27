@@ -46,7 +46,6 @@ function rootReducer(state = initialState, action){
                 productosSelect: productos
             }
         case "GET_PRODUCT":
-            console.log('===>>', action.payload)
             if(action.payload.length === 0){
                 Swal.fire({
                     icon: 'error',

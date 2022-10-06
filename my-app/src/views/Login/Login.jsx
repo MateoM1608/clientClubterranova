@@ -59,7 +59,7 @@ const Login = () => {
             <img src="https://i.postimg.cc/y6hNJNpc/Whats-App-Image-2022-09-24-at-12-34-59-PM.jpg" alt="img" />
           </div>
           <div className="triangulo"></div>
-              <h2>BIENVENIDO A CLUB TERRANOVA</h2>
+              <h2>BIENVENIDOS A CLUB TERRANOVA</h2>
               <form onSubmit={(e) => handleSubmit(e)}> 
                   <div className="login_form-element">
                     <label>Usuario:</label>

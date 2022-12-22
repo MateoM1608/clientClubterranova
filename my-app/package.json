@@ -28,8 +28,8 @@
   },
   "scripts": {
     "start": "react-dotenv && react-scripts start",
-    "buildss": "react-dotenv && react-scripts build",
-    "build": "babel src -d lib",
+    "build": "react-dotenv && react-scripts build && babel src -d lib",
+    "buildss": "babel src -d lib",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

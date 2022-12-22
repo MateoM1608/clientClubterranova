@@ -1,5 +1,7 @@
 const  reload = () => {
-    window.location.reload(true);
+    setTimeout(() => {
+        window.location.reload(true);
+    }, "800")
 }
 
 export default reload;

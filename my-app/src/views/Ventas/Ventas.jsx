@@ -42,6 +42,7 @@ const Ventas = () => {
                   }).then(res => {
                     dispatch(getAllProductoSelect())
                     reload()
+                    
                   })
             }else{
                 Swal.fire({

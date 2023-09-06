@@ -9,6 +9,7 @@ export const authenticate = (body) => dispatch => {
     .then(res => dispatch({type: "AUTHENTICATE", payload: res.data}))
 }
 
+
 // export const logOut = ()  => dispatch =>  {
 //     dispatch({type: "LOG_OUT"})
 // }
